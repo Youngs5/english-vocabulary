@@ -25,7 +25,7 @@ extension UserEntity {
             id: dto.id,
             userName: dto.userName,
             userPhone: dto.userPhone,
-            userAge: Int(dto.userAge) ?? -0,
+            userAge: Int(dto.userAge) ?? 0,
             userEmail: dto.userEmail,
             signWay: SignWay(rawValue: dto.signWay) ?? .kakao,
             createdAt: Date.fromISO8601(dto.createdAt) ?? Date(),
