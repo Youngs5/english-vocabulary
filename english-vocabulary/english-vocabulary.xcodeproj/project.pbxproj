@@ -16,6 +16,10 @@
 		4BBFB6EC2D6B646D00E6964E /* english_vocabularyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBFB6EB2D6B646D00E6964E /* english_vocabularyTests.swift */; };
 		4BBFB6F62D6B646D00E6964E /* english_vocabularyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBFB6F52D6B646D00E6964E /* english_vocabularyUITests.swift */; };
 		4BBFB6F82D6B646D00E6964E /* english_vocabularyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBFB6F72D6B646D00E6964E /* english_vocabularyUITestsLaunchTests.swift */; };
+		4BBFB7062D6B660D00E6964E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBFB7052D6B660D00E6964E /* User.swift */; };
+		4BBFB70B2D6B673700E6964E /* SignWay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBFB70A2D6B673700E6964E /* SignWay.swift */; };
+		4BBFB7102D6B68CD00E6964E /* UserResponseDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBFB70F2D6B68CD00E6964E /* UserResponseDto.swift */; };
+		4BBFB7142D6B6ED400E6964E /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBFB7132D6B6ED400E6964E /* Date+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		4BBFB6F12D6B646D00E6964E /* english-vocabularyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "english-vocabularyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BBFB6F52D6B646D00E6964E /* english_vocabularyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = english_vocabularyUITests.swift; sourceTree = "<group>"; };
 		4BBFB6F72D6B646D00E6964E /* english_vocabularyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = english_vocabularyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4BBFB7052D6B660D00E6964E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4BBFB70A2D6B673700E6964E /* SignWay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignWay.swift; sourceTree = "<group>"; };
+		4BBFB70F2D6B68CD00E6964E /* UserResponseDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponseDto.swift; sourceTree = "<group>"; };
+		4BBFB7132D6B6ED400E6964E /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,9 @@
 		4BBFB6D02D6B646B00E6964E /* english-vocabulary */ = {
 			isa = PBXGroup;
 			children = (
+				4BBFB7112D6B6E4200E6964E /* Core */,
+				4BBFB70C2D6B689000E6964E /* Data */,
+				4BBFB7072D6B670E00E6964E /* Domain */,
 				4BBFB6D12D6B646B00E6964E /* AppDelegate.swift */,
 				4BBFB6D32D6B646B00E6964E /* SceneDelegate.swift */,
 				4BBFB6D52D6B646B00E6964E /* ViewController.swift */,
@@ -125,6 +136,71 @@
 				4BBFB6F72D6B646D00E6964E /* english_vocabularyUITestsLaunchTests.swift */,
 			);
 			path = "english-vocabularyUITests";
+			sourceTree = "<group>";
+		};
+		4BBFB7072D6B670E00E6964E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				4BBFB7092D6B672E00E6964E /* Enums */,
+				4BBFB7082D6B671700E6964E /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		4BBFB7082D6B671700E6964E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				4BBFB7052D6B660D00E6964E /* User.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		4BBFB7092D6B672E00E6964E /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				4BBFB70A2D6B673700E6964E /* SignWay.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		4BBFB70C2D6B689000E6964E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4BBFB70D2D6B689B00E6964E /* Dtos */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4BBFB70D2D6B689B00E6964E /* Dtos */ = {
+			isa = PBXGroup;
+			children = (
+				4BBFB70E2D6B68B400E6964E /* User */,
+			);
+			path = Dtos;
+			sourceTree = "<group>";
+		};
+		4BBFB70E2D6B68B400E6964E /* User */ = {
+			isa = PBXGroup;
+			children = (
+				4BBFB70F2D6B68CD00E6964E /* UserResponseDto.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		4BBFB7112D6B6E4200E6964E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4BBFB7122D6B6EC400E6964E /* Extensions */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		4BBFB7122D6B6EC400E6964E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4BBFB7132D6B6ED400E6964E /* Date+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +334,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BBFB6DC2D6B646B00E6964E /* english_vocabulary.xcdatamodeld in Sources */,
+				4BBFB7142D6B6ED400E6964E /* Date+Extensions.swift in Sources */,
 				4BBFB6D62D6B646B00E6964E /* ViewController.swift in Sources */,
+				4BBFB70B2D6B673700E6964E /* SignWay.swift in Sources */,
 				4BBFB6D22D6B646B00E6964E /* AppDelegate.swift in Sources */,
+				4BBFB7102D6B68CD00E6964E /* UserResponseDto.swift in Sources */,
+				4BBFB7062D6B660D00E6964E /* User.swift in Sources */,
 				4BBFB6D42D6B646B00E6964E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
